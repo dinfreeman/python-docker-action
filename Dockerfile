@@ -9,4 +9,4 @@ RUN apt-get install -y python3
 COPY entrypoint.py /entrypoint.py
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["/entrypoint.py"]
+ENTRYPOINT ["python3", "/entrypoint.py"]
